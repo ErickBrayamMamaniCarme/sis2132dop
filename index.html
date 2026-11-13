@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La historia de los mapas antiguos</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #21180f;
+    color: #f8e9c8;
+}
+
+.slide {
+    display: none;
+    min-height: 100vh;
+    padding: 40px 8% 100px;
+    text-align: center;
+    background: linear-gradient(135deg, #49351f, #20180f);
+}
+
+.slide.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: aparecer 0.5s;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 45px;
+    color: #f2c879;
+}
+
+h2 {
+    font-size: 34px;
+    color: #e9bd72;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.7;
+    max-width: 850px;
+}
+
+img {
+    width: 65%;
+    max-width: 550px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid #d6ae69;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+button {
+    background: #d6ae69;
+    color: #24190d;
+    border: none;
+    padding: 13px 25px;
+    margin: 10px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ffe0a0;
+}
+
+button:disabled {
+    opacity: 0.4;
+}
+
+.navegacion {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #21180f;
+    padding: 10px;
+}
+
+#numero {
+    color: #f2c879;
+}
+
+@media(max-width:600px) {
+    h1 { font-size: 32px; }
+    h2 { font-size: 26px; }
+    p { font-size: 16px; }
+    img { width: 95%; height: 220px; }
+}
+</style>
+</head>
+
+<body>
+
+c
+<section class="slide active">
+    <h1>LA HISTORIA DE LOS MAPAS ANTIGUOS</h1>
+
+    <img src="images (4).jpg">
+
+    <p>
+        Un recorrido por la evolución de los mapas,
+        desde las primeras civilizaciones hasta los
+        grandes descubrimientos geográficos.
+    </p>
+
+    <h3>Historia de la cartografía</h3>
+</section>
+
+
+<section class="slide">
+    <h2>1. ¿Qué son los mapas antiguos?</h2>
+
+    <img src="images (5).jpg">
+
+    <p>
+        Los mapas antiguos son representaciones gráficas
+        que utilizaban las civilizaciones para mostrar
+        territorios, caminos, ríos, montañas y ciudades.
+        Fueron importantes para conocer el espacio,
+        orientarse y organizar los viajes.
+    </p>
+</section>
+
+
+<section class="slide">
+    <h2>2. Los primeros mapas</h2>
+
+    <img src="images (6).jpg">
+    <p>
+        Los primeros mapas aparecieron hace miles de años.
+        Algunas de las primeras representaciones conocidas
+        fueron elaboradas en Mesopotamia sobre tablillas
+        de arcilla. Estos mapas mostraban lugares conocidos
+        y elementos importantes de su entorno.
+    </p>
+</section>
+
+
+<section class="slide">
+    <h2>3. Los mapas en la antigua Grecia</h2>
+
+    <img src="images (7).jpg">
+    <p>
+        Los griegos contribuyeron al desarrollo de la
+        cartografía. Eratóstenes calculó la circunferencia
+        de la Tierra y Claudio Ptolomeo recopiló
+        conocimientos geográficos para representar
+        diferentes regiones del mundo.
+    </p>
+</section>
+
+
+<section class="slide">
+    <h2>4. Los mapas durante la Edad Media</h2>
+
+    <img src="images (8).jpg">
+
+    <p>
+        Durante la Edad Media los mapas tenían una gran
+        influencia religiosa y cultural. Algunos mostraban
+        el mundo de manera circular e incluían ciudades,
+        lugares importantes y representaciones religiosas.
+    </p>
+</section>
+
+
+<section class="slide">
+    <h2>5. La era de los descubrimientos</h2>
+
+    <img src="images (9).jpg">
+
+    <p>
+        Entre los siglos XV y XVI, los viajes marítimos
+        permitieron conocer nuevas rutas y territorios.
+        Los cartógrafos comenzaron a elaborar mapas
+        más detallados. En 1507, Martin Waldseemüller
+        publicó un mapa que utilizó el nombre América.
+    </p>
+</section>
+
+
+<section class="slide">
+    <h2>6. Importancia de los mapas antiguos</h2>
+
+    <img src="images (9).jpg">
+
+    <p>
+        Los mapas antiguos fueron fundamentales para
+        la orientación, la navegación, el comercio
+        y la exploración. También permitieron conservar
+        conocimientos geográficos y conocer cómo
+        las antiguas civilizaciones entendían el mundo.
+    </p>
+</section>
+
+
+<section class="slide">
+    <h2>7. Conclusión</h2>
+
+    <img src="images (10).jpg">
+
+    <p>
+        Los mapas antiguos representan una parte
+        importante de la historia de la humanidad.
+        Gracias a ellos podemos conocer cómo las
+        civilizaciones exploraban, imaginaban y
+        representaban el mundo. Con el paso del tiempo,
+        la cartografía evolucionó hasta llegar a los
+        mapas digitales actuales.
+    </p>
+
+    <h2>¡GRACIAS POR SU ATENCIÓN!</h2>
+</section>
+
+    <button id="anterior" onclick="cambiarSlide(-1)">
+        ← Anterior
+    </button>
+
+    <span id="numero">1 / 8</span>
+
+    <button id="siguiente" onclick="cambiarSlide(1)">
+        Siguiente →
+    </button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
